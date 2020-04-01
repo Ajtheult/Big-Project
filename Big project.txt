@@ -77,6 +77,24 @@ Next of kin cellphone number: 072 736 8365
 Next of kin email: Mugenevans1@gmail.com
 
 
+____________________________
+New profile
+--------
+Name:
+Surname:
+Email: 
+Cell Number: 
+----------
+More details
+----------
+
+Home address: 
+
+Next of kin name: 
+Next of kin relationship: 
+Next of kin cellphone number: 
+Next of kin email: 
+
 
 
 
