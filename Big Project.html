@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS for Big Project.css">
     <title>Big project</title>
   </head>
+  <!-- Please dont style with inline style, use classes -->
   <body style="background-image: url(background.png);">
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -24,27 +25,33 @@
         </li>
       </ul>
   </nav>
+
   <div>
+    <!-- style the width and height using CSS instead -->
     <img src="heading pic.jpg" width="100%" height="600px">
+    <!-- Use an <h1> instead. if youre going to write text, use a text tag -->
     <div class="centered">Ling Ling 40 hours</div>
   </div> 
   <div class="tab">
+    <!-- This does not have to be a button, can use an <h3> or something -->
     <button><b>User Profiles<b></button>
+    <!-- This can be made into a <ul> since this is a *list* of buttons. in each <li> you can put the <button> -->
     <button>-Tsumugi Kotobuki</button>
     <button>-Arima Kousei </button>
     <button>-Kai Ichinose </button>
     <button>-Soul Evans</button>
+    <!-- Style this one differently, so that it is visible that this does something different -->
     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
     -New Profile
     </button>
+    <!-- Add comments like start of modal here -->
     <div class="modal" id="myModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-
           <div class="modal-header">
             <h3 class="modal-title">Create a new profile</h3>
-        </div>
-            <div class="modal-body">
+          </div>
+          <div class="modal-body">
             <form action="/action/">
               <div class="form-group">
                   <div class="was-validated">
@@ -69,139 +76,145 @@
                       <input type="password" class="form-control">
                   </div>
               </div>
-                  <button type="button" class="btn btn-success"><b>Create</b></button>
-           </div>
-           </form>
+              <button type="button" class="btn btn-success"><b>Create</b></button>
+            <!-- </div> This did not need to be here -->
+            </form>
           </div>
-          </div>
+        </div>
       </div>
     </div>
+    <!-- End of modal here -->
   </div>  
-  
-  
+  <!-- Lol try to use more meaningful names. made me laugh though -->
   <h1 class="oof">Profiles</h1>
 
   <div class="row">
-  <div class="card">
-    <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
-    <img src="Tsumugi.png"  class="wer" width="275px" height="300px">
-    <h2>Tsumugi Kotobuki</h2>
-    <p>Email: Tsumugikoto3@gmail.com</p>
-    <p>Cell Number: 062 478 5242</p>
-    <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
-  </div>
-  <div class="modal" id="myModal1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Modal body..
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-     </div>
+    <div class="card">
+      <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+      <img src="Tsumugi.png"  class="wer" width="275px" height="300px">
+      <h2>Tsumugi Kotobuki</h2>
+      <p>Email: Tsumugikoto3@gmail.com</p>
+      <p>Cell Number: 062 478 5242</p>
+      <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
     </div>
-  </div>
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Modal body..
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   
-  <div class="card">
-    <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
-    <img src="kousei.jpg" width="275px" height="300px">
-    <h2>Arima Kousei</h2>
-    <p>Email: Arimakousei8@gmail.com </p>
-    <p>Cell Number: 062 365 8643</p>
-    <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
-  </div>
-  <div class="modal" id="myModal1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Modal body..
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-     </div>
+    <div class="card">
+      <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+      <img src="kousei.jpg" width="275px" height="300px">
+      <h2>Arima Kousei</h2>
+      <p>Email: Arimakousei8@gmail.com </p>
+      <p>Cell Number: 062 365 8643</p>
+      <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
     </div>
-  </div>
-  
-
-  <div class="card">
-    <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
-
-    <img src="Kai.jpg" width="275px" height="300px">
-    <h2>Kai Ichinose</h2>
-    <p>Email: Kaiichinose2@gmail.com</p>
-    <p>Cell Number: 062 573 7422</p>
-    <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
-  </div>
-  <div class="modal" id="myModal1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Modal body..
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-     </div>
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Modal body..
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
     </div>
-  </div>
   
 
-  <div class="card">
-    <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
-    <img src="Soul.jpg" width="275px" height="300px">
-    <h2>Soul Evans</h2>
-    <p>Email: Soulevans5@gmail.com </p>
-    <p>Cell Number: 062 964 3682</p>
-    <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
-  </div>
-  <div class="modal" id="myModal1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Modal body..
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-     </div>
+    <div class="card">
+      <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+
+      <img src="Kai.jpg" width="275px" height="300px">
+      <h2>Kai Ichinose</h2>
+      <p>Email: Kaiichinose2@gmail.com</p>
+      <p>Cell Number: 062 573 7422</p>
+      <!-- dont put a <button> in a <p>, it will be one or the other -->
+      <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
     </div>
-  </div>
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Modal body..
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      <button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+      <img src="Soul.jpg" width="275px" height="300px">
+      <h2>Soul Evans</h2>
+      <p>Email: Soulevans5@gmail.com </p>
+      <p>Cell Number: 062 964 3682</p>
+      <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
+    </div>
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Modal body..
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div> 
   
 
 
 
-
-
-
-
-
-
-  </body>
-
-<footer class="footer">
-  <p class="yup">40 hours</p>
-</footer>
-
-
+  
+  <footer class="footer">
+    <p class="yup">40 hours</p>
+  </footer>
+  
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</html>
+<!-- this guy under this comment was in the wrong place -->
+</body>
+  </html>
+
+<!-- EXTRA COMMENTS -->
+<!-- 
+  your work looks amazing, remember all modal ID must be unique, and the button which opens it must contain the correct ID. 
+  ALSO please neaten up your code, try to remember proper indentation. It helps with readability. Ive done the first little but, but please continue to do so. You will thank me later for this
+
+  PS
+  add your own comments in so you know what is going on. It helps to have start and end comments for cards and modals, as well as indicate what your thought patterns are
+ -->
