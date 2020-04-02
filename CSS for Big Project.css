@@ -11,7 +11,7 @@ h1 {
     transform: translate(-50%, -50%);
     font-size: 90px;
     font-family: 'Times New Roman', Times, serif ;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 
@@ -40,4 +40,68 @@ h1 {
   font-size: 20px;
 }
 
+.footer {
+  position: fixed;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+
+.yup {
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.oof {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 80px;
+  padding: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+p {
+  text-align: left;
+}
 
