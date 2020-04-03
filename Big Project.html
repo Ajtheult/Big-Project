@@ -1,368 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-          <!doctype html>
-          <html lang="en">
-            <head>
-              <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS for Big Project.css">
+    <title>Big project</title>
+  </head>
+  <body class="Thisisthebackground" >
+    <!-- NavBar-Start -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+      <a href="#"><img src="icon.png" class="cornericon"></a>
 
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-              <link rel="stylesheet" href="CSS for Big Project.css">
-              <title>Big project</title>
-            </head>
-            <body class="Thisisthebackground" >
-              <!-- NavBar-Start -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <ul class="navbar-nav">
-                <a href="#"><img src="icon.png" height="50px" width="50px"></a>
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Pianos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">User Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About us</a>
+        </li>
+      </ul>
+  </nav>
+  <!-- NavBar-End -->
+  <div>
+    <img src="heading pic.jpg" class="headingpic">
+    <h1 class="centered">Ling Ling 40 hours</h1>
+  </div> 
+  <!-- The white bar on the side -->
+<div class="tab">
+    <button><b>User Profiles<b></button>
+    <button>-Tsumugi Kotobuki</button>
+    <button>-Arima Kousei </button>
+    <button>-Kai Ichinose </button>
+    <button>-Soul Evans</button>
+    <!-- Changing the buttons into li messes up the structure of the page -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+    -New Profile
+    </button>
+    <!-- Start of the new profile modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title">Create a new profile</h3>
+        </div>
+            <div class="modal-body">
+            <form action="/action/">
+              <div class="form-group">
+                  <div>
+                      <label for="name">First Name:</label>
+                      <input type="text" class="form-control">
+                      <label for="surname">Last Name:</label>        
+                      <input type="text" class="form-control">
+                      <label for="number">Number:</label>
+                      <input type="text" class="form-control">
+                      <label for="homeaddress">Home Address:</label>
+                      <input type="text" class="form-control">
+                      <label for="nextofkinname">Next of kin name: </label>
+                      <input type="text" class="form-control">
+                      <label for="nextofkinrel">Next of kin relationship: </label>
+                      <input type="text" class="form-control">
+                      <label for="nextofkincel">Next of kin cellphone number:</label>
+                      <input type="number" class="form-control">
+                      <label for="email">Next of kin email: </label>
+                      <input type="email" class="form-control">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control">
+                  </div>
+              </div>
+                  <button type="button" class="btn btn-success"><b>Create</b></button>
+          
+          </form>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>  
+  <!-- End of profile creation modal -->
+  <p class="audio1">Chopin-Nocturne No.20</p>
+  <audio controls>
+    <source src="Frédéric Chopin - Nocturne No. 20.mp3" type="audio/mpeg">
+      <!-- I felt like this would be nice to listen to while you are busy with my project -->
+  </audio>
   
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Pianos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">User Profiles</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">About us</a>
-                  </li>
-                </ul>
-            </nav>
-            <!-- NavBar-End -->
-            <div>
-              <img src="heading pic.jpg" class="headingpic">
-              <h1 class="centered">Ling Ling 40 hours</h1>
-            </div> 
-            <!-- The white bar on the side -->
-          <div class="tab">
-              <button><b>User Profiles<b></button>
-              <button>-Tsumugi Kotobuki</button>
-              <button>-Arima Kousei </button>
-              <button>-Kai Ichinose </button>
-              <button>-Soul Evans</button>
-              <!-- Changing the buttons into li messes up the structure of the page -->
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              -New Profile
-              </button>
-              <!-- Start of the new profile modal -->
-              <div class="modal" id="myModal">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-
-                    <div class="modal-header">
-                      <h3 class="modal-title">Create a new profile</h3>
-                  </div>
-                      <div class="modal-body">
-                      <form action="/action/">
-                        <div class="form-group">
-                            <div>
-                                <label for="name">First Name:</label>
-                                <input type="text" class="form-control">
-                                <label for="surname">Last Name:</label>        
-                                <input type="text" class="form-control">
-                                <label for="number">Number:</label>
-                                <input type="text" class="form-control">
-                                <label for="homeaddress">Home Address:</label>
-                                <input type="text" class="form-control">
-                                <label for="nextofkinname">Next of kin name: </label>
-                                <input type="text" class="form-control">
-                                <label for="nextofkinrel">Next of kin relationship: </label>
-                                <input type="text" class="form-control">
-                                <label for="nextofkincel">Next of kin cellphone number:</label>
-                                <input type="number" class="form-control">
-                                <label for="email">Next of kin email: </label>
-                                <input type="email" class="form-control">
-                                <label for="password">Password:</label>
-                                <input type="password" class="form-control">
-                            </div>
-                        </div>
-                            <button type="button" class="btn btn-success"><b>Create</b></button>
-                    
-                    </form>
-                    </div>
-                    </div>
-                </div>
-              </div>
-            </div>  
-            <!-- End of profile creation modal -->
-            <p class="audio1">Chopin-Nocturne No.20</p>
-            <audio controls>
-              <source src="Frédéric Chopin - Nocturne No. 20.mp3" type="audio/mpeg">
-                <!-- I felt like this would be nice to listen to while you are busy with my project -->
-            </audio>
-            
-            <h1 class="profileheading">Profiles</h1>
-              
-            <div class="flex-container">
-              <!-- Profile card 1-Start -->
-            <div class="card">
-            <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModala" data-dismiss="modal">&times;</button>
-           <div class="modal" id="myModala">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    Are you sure you want to delete this profile?
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-              <img src="Tsumugi.png"  class="kai" width="275px" height="300px">
-              <h2>Tsumugi Kotobuki</h2>
-              <p> &nbsp Email: Tsumugikoto3@gmail.com</p>
-              <p> &nbsp Cell Number: 062 478 5242</p>
-              <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
-            </div>
-            <!-- Additional info-start -->
-              <div class="modal" id="myModal1">
-               <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                  <h4 class="modal-title">Tsumugi Kotobuki Additional Info</h4>
-                  </div>
-                  <div class="modal-body">
-                  <img src="mugi piano.jpg" class="soul" alt="mugi" height="50%" width="100%">
-                    <br>
-                    <br>
-                    <p>
-                      Home address: 8132 Rockledge Dr.
-                      Peabody, MA 01960
-                    </p>
-                    <p>
-                      Next of kin name: Mitsuo Kotobuki
-                    </p>
-                    <p>
-                      Next of kin relationship: Father
-                    </p>
-                    <p>
-                      Next of kin cellphone number: 073 735 1746
-                    </p>
-                    <p>
-                      Next of kin email: Mitsuokotobuki3@gmail.com
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <!-- Additional info-end -->
-                  </div>
-              </div>
-              </div>
-            </div>
-            <!-- End of profile 1 -->
-
-            <!-- Profile 2- Start -->
-            <div class="card">
-            <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalab" data-dismiss="modal">&times;</button>
-            <div class="modal" id="myModalab">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    Are you sure you want to delete this profile?
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-           <img src="kousei.jpg"  class="kai" width="275px" height="300px">
-              <h2>Kousei Arima </h2>
-              <p> &nbsp Email: Arimakousei8@gmail.com </p>
-              <p> &nbsp Cell Number: 062 365 8643</p>
-              <button  type="button" data-toggle="modal" data-target="#myModal2">More details</button>
-            </div>
-            <!-- Additional info Modal -->
-            <div class="modal" id="myModal2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title"> Kousei Arima Additional Info</h4>
-                  </div>
-                  <!-- Modal Body-Start -->
-                  <div class="modal-body">
-                  <img src="arima piano.png" class="soul" alt="arima" height="50%" width="100%">
-                    <br>
-                    <br>
-                    <p>
-                    Home address: 63 Del Monte Drive
-                    West Islip, NY 11795
-                    </p>
-                    <p>
-                    Next of kin name: Saki Arima
-                    </p>
-                    <p>
-                    Next of kin relationship: Mother
-                    </p>
-                    <p>
-                    Next of kin cellphone number: 062 475 1857
-                    </p>
-                    <p>
-                    Next of kin email: Sakiarima8@gmail.com
-                    </p>
-
-                  </div>
-                  <!-- Modal body-End -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-              </div>
-            </div>
-            <!-- Profile 2-end -->
-
-            <!-- Profil 3-start -->
-            <div class="card">
-              <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalabc" data-dismiss="modal">&times;</button>
-              <div class="modal" id="myModalabc">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      Are you sure you want to delete this profile?
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
-                    </div>
+  <h1 class="profileheading">Profiles</h1>
     
-                  </div>
-                </div>
-              </div>
+  <div class="flex-container">
+    <!-- Profile card 1-Start -->
+  <div class="card">
+  <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModala" data-dismiss="modal">&times;</button>
+ <div class="modal" id="myModala">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to delete this profile?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+        </div>
 
-              <img src="Kai.jpg"  class="kai" width="275px" height="300px">
-              <h2>Kai Ichinose</h2>
-              <p>&nbsp Email: Kaiichinose2@gmail.com</p>
-              <p>&nbsp Cell Number: 062 573 7422</p>
-              <p><button  type="button" data-toggle="modal" data-target="#myModal3">More details</button></p>
-            </div>
-            <!-- Additional info modal-Start -->
-            <div class="modal" id="myModal3">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Kai Ichinose Additional Info</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="kai  piano.jpg" class="kai" alt="kai" height="50%" width="100%">
-                    <!-- Modal Body-Start -->
-                    <br>
-                    <br>
-                    <p>
-                    Home address: 7002 Catherine St.
-                    Piedmont, SC 29673
-                    </p>
-                    <p>
-                    Next of kin name: Reiko Ichinose
-                    </p>
-                    <p>
-                    Next of kin relationship: Mother
-                    </p>
-                    <p>
-                    Next of kin cellphone number: 072 635 9625
-                    </p>
-                    <p>
-                    Next of kin email:Reikoichinose9@gmail.com
-                    </p>  
-                  </div>
-                  <!-- Modal Body-End -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-              </div>
-            </div>
-            <!-- Additional info modal -->
-            <!-- Profile 3-end -->
+      </div>
+    </div>
+  </div>
+    <img src="Tsumugi.png"  class="kai">
+    <h2>Tsumugi Kotobuki</h2>
+    <p> &nbsp Email: Tsumugikoto3@gmail.com</p>
+    <p> &nbsp Cell Number: 062 478 5242</p>
+    <p><button  type="button" data-toggle="modal" data-target="#myModal1">More details</button></p>
+  </div>
+  <!-- Additional info-start -->
+    <div class="modal" id="myModal1">
+     <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Tsumugi Kotobuki Additional Info</h4>
+        </div>
+        <div class="modal-body">
+        <img src="mugi piano.jpg" class="soul" alt="mugi">
+          <br>
+          <br>
+          <p>
+            Home address: 8132 Rockledge Dr.
+            Peabody, MA 01960
+          </p>
+          <p>
+            Next of kin name: Mitsuo Kotobuki
+          </p>
+          <p>
+            Next of kin relationship: Father
+          </p>
+          <p>
+            Next of kin cellphone number: 073 735 1746
+          </p>
+          <p>
+            Next of kin email: Mitsuokotobuki3@gmail.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <!-- Additional info-end -->
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- End of profile 1 -->
 
-            <!-- Profile 4-start -->
-            <div class="card">
-              <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalabcd" data-dismiss="modal">&times;</button>
-              <div class="modal" id="myModalabcd">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      Are you sure you want to delete this profile?
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
-                    </div>
-    
-                  </div>
-                </div>
-              </div>
-              <img src="Soul.jpg"  class="soul" width="275px" height="300px">
-              <h2>Soul Evans</h2>
-              <p>&nbspEmail: Soulevans5@gmail.com</p>
-              <p>&nbspCell Number: 062 964 3682</p>
-              <p><button  type="button" data-toggle="modal" data-target="#myModal4">More details</button></p>
-            </div>
-            <!-- Additional info modal-start -->
-            <div class="modal" id="myModal4">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Soul Evans Additional Info</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="soul piano.jpg" class="qaz" alt="Soul" height="50%" width="100%">
-                    <br>
-                    <br>
-                    <p>
-                    Home address: 79 S. Leeton Ridge Drive
-                    Beloit, WI 53511
-                    </p>
-                    <p>
-                    Next of kin name: Mugen Evans
-                    </p>
-                    <p>
-                    Next of kin relationship: Father
-                    </p>
-                    <p>
-                    Next of kin cellphone number: 072 736 8365
-                    </p>
-                    <p> 
-                    Next of kin email: Mugenevans1@gmail.com
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-              </div>
-              </div>
-            </div>
-            <!-- Additional info-End -->
-            <!-- Profile 4-end -->
-          <!-- Footer -->
-            <footer class="footer">
-            40 hours
-            </footer>
-          <!-- Footer -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-          </body>
-         </html>
+  <!-- Profile 2- Start -->
+  <div class="card">
+  <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalab" data-dismiss="modal">&times;</button>
+  <div class="modal" id="myModalab">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to delete this profile?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+        </div>
 
-         
+      </div>
+    </div>
+  </div>
+ <img src="kousei.jpg"  class="kai">
+    <h2>Kousei Arima </h2>
+    <p> &nbsp Email: Arimakousei8@gmail.com </p>
+    <p> &nbsp Cell Number: 062 365 8643</p>
+    <button  type="button" data-toggle="modal" data-target="#myModal2">More details</button>
+  </div>
+  <!-- Additional info Modal -->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"> Kousei Arima Additional Info</h4>
+        </div>
+        <!-- Modal Body-Start -->
+        <div class="modal-body">
+        <img src="arima piano.png" class="soul" alt="arima">
+          <br>
+          <br>
+          <p>
+          Home address: 63 Del Monte Drive
+          West Islip, NY 11795
+          </p>
+          <p>
+          Next of kin name: Saki Arima
+          </p>
+          <p>
+          Next of kin relationship: Mother
+          </p>
+          <p>
+          Next of kin cellphone number: 062 475 1857
+          </p>
+          <p>
+          Next of kin email: Sakiarima8@gmail.com
+          </p>
 
+        </div>
+        <!-- Modal body-End -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- Profile 2-end -->
 
+  <!-- Profil 3-start -->
+  <div class="card">
+    <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalabc" data-dismiss="modal">&times;</button>
+    <div class="modal" id="myModalabc">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            Are you sure you want to delete this profile?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+          </div>
 
+        </div>
+      </div>
+    </div>
 
+    <img src="Kai.jpg"  class="kai">
+    <h2>Kai Ichinose</h2>
+    <p>&nbsp Email: Kaiichinose2@gmail.com</p>
+    <p>&nbsp Cell Number: 062 573 7422</p>
+    <p><button  type="button" data-toggle="modal" data-target="#myModal3">More details</button></p>
+  </div>
+  <!-- Additional info modal-Start -->
+  <div class="modal" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Kai Ichinose Additional Info</h4>
+        </div>
+        <div class="modal-body">
+          <img src="kai  piano.jpg" class="soul" alt="kai" >
+          <!-- Modal Body-Start -->
+          <br>
+          <br>
+          <p>
+          Home address: 7002 Catherine St.
+          Piedmont, SC 29673
+          </p>
+          <p>
+          Next of kin name: Reiko Ichinose
+          </p>
+          <p>
+          Next of kin relationship: Mother
+          </p>
+          <p>
+          Next of kin cellphone number: 072 635 9625
+          </p>
+          <p>
+          Next of kin email:Reikoichinose9@gmail.com
+          </p>  
+        </div>
+        <!-- Modal Body-End -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- Additional info modal -->
+  <!-- Profile 3-end -->
 
+  <!-- Profile 4-start -->
+  <div class="card">
+    <button type="button" class="close btn-danger" data-toggle="modal" data-target="#myModalabcd" data-dismiss="modal">&times;</button>
+    <div class="modal" id="myModalabcd">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            Are you sure you want to delete this profile?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+          </div>
 
-
-
-
-
-
-        
+        </div>
+      </div>
+    </div>
+    <img src="Soul.jpg"  class="kai">
+    <h2>Soul Evans</h2>
+    <p>&nbspEmail: Soulevans5@gmail.com</p>
+    <p>&nbspCell Number: 062 964 3682</p>
+    <p><button  type="button" data-toggle="modal" data-target="#myModal4">More details</button></p>
+  </div>
+  <!-- Additional info modal-start -->
+  <div class="modal" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Soul Evans Additional Info</h4>
+        </div>
+        <div class="modal-body">
+          <img src="soul piano.jpg" class="soul" alt="Soul">
+          <br>
+          <br>
+          <p>
+          Home address: 79 S. Leeton Ridge Drive
+          Beloit, WI 53511
+          </p>
+          <p>
+          Next of kin name: Mugen Evans
+          </p>
+          <p>
+          Next of kin relationship: Father
+          </p>
+          <p>
+          Next of kin cellphone number: 072 736 8365
+          </p>
+          <p> 
+          Next of kin email: Mugenevans1@gmail.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- Additional info-End -->
+  <!-- Profile 4-end -->
+<!-- Footer -->
+  <footer class="footer">
+  40 hours
+  </footer>
+<!-- Footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
