@@ -52,18 +52,17 @@ h1 {
   width: 100%;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-.yup {
   text-align: left;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
   padding: 15px 15px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.oof {
+.Thisisthebackground {
+  background-image: url(background.png);
+}
+
+
+.profileheading {
   font-family: 'Times New Roman', Times, serif;
   font-size: 80px;
   padding: 20px;
@@ -76,6 +75,10 @@ h1 {
   text-align: center;
 }
 
+.headingpic {
+  width:100%;
+  height:600px;
+}
 
 .title {
   color: grey;
@@ -109,11 +112,11 @@ p {
   text-align: left;
 }
 
-.qaz  {
+.kai {
   border: 3px solid black;
 }
 
-.wer  {
+.soul  {
   border: 4px solid black;
 }
 
