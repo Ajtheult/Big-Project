@@ -3,6 +3,11 @@ h1 {
     text-align: center;
     padding: 10px;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .centered {
     position: 
     absolute;
@@ -15,14 +20,13 @@ h1 {
 }
 
 
-
-
 .tab {
   float: left;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   background-color: #ffffff;
-  width: 15%;
-  height: 1000px;
+  width: 13%;
+  height: 1400px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -42,35 +46,38 @@ h1 {
 
 .footer {
   position: fixed;
-  height: 50px;
+  height: 60px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  text-align: center;
-  
-}
-
-.yup {
   text-align: left;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding: 10px 10px;
+  padding: 15px 15px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.oof {
+.Thisisthebackground {
+  background-image: url(background.png);
+}
+
+
+.profileheading {
   font-family: 'Times New Roman', Times, serif;
   font-size: 80px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
   max-width: 300px;
   margin: auto;
   text-align: center;
+}
+
+.headingpic {
+  width:100%;
+  height:600px;
 }
 
 .title {
@@ -88,7 +95,7 @@ button {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 a {
@@ -105,3 +112,33 @@ p {
   text-align: left;
 }
 
+.kai {
+  border: 3px solid black;
+  width:275px; 
+  height:300px;
+}
+
+.soul  {
+  border: 4px solid black;
+  height:50%;
+  width:100%;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+.tab {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.audio1 {
+  color: white;
+  padding: 10px;
+}
+
+.cornericon {
+  height:50px;
+  width:50px;
+}
